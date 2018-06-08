@@ -7,7 +7,7 @@ public class Identifier {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @Column(length = 1337)
+    @Column(length = 2048)
     private String nonce;
 
     protected  Identifier() {}
