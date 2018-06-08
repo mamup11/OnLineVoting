@@ -64,3 +64,11 @@ Para correr el aplicativo es necesario tener instalado java 1.8 o superior.
 Tambien es necesario tener Apache Maven instalado en el equipo y para correr el aplicativo se debe correr el siguiente comando
 
 ``` #mvn spring-boot:run ```
+
+### Produccion
+
+Se puede encontrar este servicio corriendo en la siguiente URL:
+
+https://identifier-eafit.herokuapp.com/
+
+Nota: es posible necesitar hacer 2 llamados al servicio, uno para "despertar" el servidor y otro para consumir el servicio como tal
