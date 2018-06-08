@@ -21,16 +21,16 @@
     <dependencies>
 
         <!-- connection to postgresql -->
-        <!--<dependency>
+        <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-        </dependency>-->
+        </dependency>
 
         <!-- H2 Database for testing -->
-        <dependency>
+        <!--<dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-        </dependency>
+        </dependency>-->
 
         <!-- Hikkari connection pool, for a fast request to DB -->
         <dependency>
@@ -56,4 +56,14 @@
             <artifactId>commons-dbcp</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Package as an executable jar/war -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
